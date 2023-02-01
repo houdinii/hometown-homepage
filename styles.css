@@ -1,0 +1,222 @@
+@font-face {
+  src: url("fonts/gomarice_nandaka_western.ttf");
+  font-family: Gomarice;
+}
+
+* {
+  --ep-black: #1c1c22ff;
+  --ep-silver: #afaaa2ff;
+  --ep-gray: #a8babaff;
+  --ep-tan: #d6a471ff;
+  --ep-brown: #5a3f2bff;
+  /*font-family: 'Aboreto', cursive;*/
+  /*font-family: 'Rowdies', cursive;*/
+  /*font-family: 'Yeseva One', cursive;*/
+
+}
+
+body, html{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.header-wrapper {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1500px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-image: url("images/GettyImages-184106738_high.jpg"), linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+  background-position: 85% 15%;
+
+  background-blend-mode: overlay;
+  background-size: cover;
+
+  width: 100%;
+  height: 500px;
+
+  gap: 30px;
+}
+
+.header-text {
+  font-size: 60px;
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 10px;
+  background-blend-mode: overlay;
+  padding: 70px 90px;
+}
+
+.header-location {
+  text-align: center;
+  font-family: Gomarice, serif;
+  color: var(--ep-gray);
+  text-decoration: underline;
+  text-decoration-color: var(--ep-tan);
+  text-shadow: 0 0 4px var(--ep-black);
+}
+
+.header-intro {
+  text-align: center;
+  color: var(--ep-tan);
+  font-family: 'Aboreto', cursive;
+  text-shadow: 0 0 4px var(--ep-black);
+  font-weight: bold;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 1000px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.motto {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.motto-text {
+  font-family: "Nothing You Could Do", sans-serif;
+  font-size: 60px;
+  color: var(--ep-black);
+  font-style: italic;
+  font-weight: bold;
+}
+
+.things-to-do {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 50px 0;
+  /*min-width: 800px;*/
+  width: 100%;
+  /*max-width: 1500px;*/
+  background-color: var(--ep-gray);
+}
+
+.thing {
+  text-align: center;
+  max-width: 30%;
+}
+
+.thing-title {
+  font-weight: bold;
+}
+
+.thing-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 700px;
+}
+
+.thing-desc {
+  font-size: 28px;
+  line-height: 45px;
+}
+
+.about-me {
+  margin: 100px 0;
+  background-color: var(--ep-silver);
+  border-radius: 1000px 100px 100px 1000px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  min-width: 700px;
+  max-width: 800px;
+  justify-content: space-around;
+  padding-right: 50px;
+}
+
+.title {
+  font-size: 40px;
+  margin: 20px 0 0 0;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.profile-text {
+  max-width: 700px;
+  font-size: 22px;
+  font-style: italic;
+}
+
+.profile-name {
+  font-weight: bold;
+}
+
+.footer{
+  display: block;
+  text-align: center;
+  background-color: var(--ep-brown);
+  color: var(--ep-tan);
+  padding-top: 1px;
+  padding-bottom: 20px;
+  height: 50px;
+  width: 100%;
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1500px;
+}
+
+.avatar-bounce-in:hover,
+.avatar-bounce-in:focus,
+.avatar-bounce-in:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.avatar-bounce-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.sports {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 32px;
+  background-color: var(--ep-gray);
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+
+.sports-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.sport-img {
+  width: 200px;
+}
